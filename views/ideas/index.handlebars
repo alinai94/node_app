@@ -1,0 +1,14 @@
+<hr/>
+{{#each ideas}}
+  <div class="item" style="border:1px solid #ccc;padding:5px;margin:5px;float:left;box-shadow:2px 5px 10px rgba(0,0,0,.6)">
+      <h3>{{ title }}</h3>
+      <h5>{{details}}</h5>
+      <a href="/ideas/edit/{{id}}"><button>编辑</button></a>
+      <form method="POST" action="/ideas/{{id}}?_method=DELETE" style="float:right">
+        <input type="hidden" name="method" value="DELETE" />
+        <input type="submit"  value="删除" />
+      </form>
+  </div>
+{{else}}
+  <p>暂时还没有数据呀</p>
+{{/each}}

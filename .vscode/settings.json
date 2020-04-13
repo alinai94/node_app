@@ -1,0 +1,11 @@
+{
+	"editor.formatOnSave": true,
+	"editor.formatOnPaste": true,
+	"editor.tabSize": 2,
+	"editor.mouseWheelZoom": true,
+	"editor.formatOnType": true,
+	"files.trimFinalNewlines": true,
+	"files.trimTrailingWhitespace": true,
+	"eslint.packageManager": "yarn",
+	"prettier.printWidth": 110
+}

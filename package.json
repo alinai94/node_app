@@ -1,0 +1,39 @@
+{
+  "dependencies": {
+    "bcrypt": "^4.0.1",
+    "connect-flash": "^0.1.1",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "express-session": "^1.17.0",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.9.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier --single-quote --write",
+      "git add"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint:recommended",
+      "react-app"
+    ],
+    "rules": {
+      "react/no-unused-state": "error",
+      "no-console": "warn"
+    }
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.0.7",
+    "prettier": "^1.19.1"
+  }
+}

@@ -1,0 +1,19 @@
+{{#each errors}}
+  <div class="alert">{{text}}</div>
+{{else}}
+
+{{/each}}
+
+<form action="/ideas/{{id}}?_method=PUT" method="post">
+  <div>
+    <label>标题：</label>
+    <input name="title" value="{{title}}"/>
+  </div>
+  <br/>
+  <div>
+    <label>详情：</label>
+    <textarea name="details">{{details}}</textarea>
+  </div>
+  <button type="submit">提交</button>
+  <br/>
+</form>
